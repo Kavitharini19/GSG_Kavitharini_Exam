@@ -287,7 +287,7 @@ To sign in as the root user,
     
     The **Root user sign in** page is displayed.
 
-5.  In the **Password** field, enter your password for your AWS account and select **Sign** **in**.
+5.  In the **Password** field, enter your password for the AWS account and select **Sign** **in**.
 
     The **Keep your account secure** page is displayed.
 
