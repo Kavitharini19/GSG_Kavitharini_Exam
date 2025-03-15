@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GSG_Kavitharini_Exam.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="aws-cloud---getting-started-guide">AWS Cloud - Getting Started Guide</h2>
+<p><strong>Table of Content</strong></p>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#getting-started">Getting Started</a>
+<ul>
+<li><a href="#create-an-aws-account">Create an AWS Account</a></li>
+<li><a href="#sign-in-to-aws-management-console">Sign In to AWS Management Console</a></li>
+</ul>
+</li>
+<li><a href="#faqs">FAQs</a></li>
+</ul>
+<h1 id="overview">Overview</h1>
+<p>AWS stands for Amazon Web Services. Amazon provides AWS as a cloud computing service. It helps individuals and businesses to store, manage, and access data from anywhere using the internet. It supports creating and running the applications in the cloud with ease. It allows access in
+mobile and web browsers.</p>
+<p>AWS offers a variety of services, including computing, databases, storage, networking, and security. The services and features of AWS make it flexible and user-friendly. AWS uses a subscription model of pay-as-you-go service. It ensures cost efficiency compared to on-premise setups.</p>
+<p>This guide is to assist you in getting started with the AWS Cloud application.</p>
+<p><strong>Key features</strong></p>
+<ul>
+<li>
+<p><strong>Profile:</strong> Create a user profile to manage and store  your data and applications in the cloud.</p>
+</li>
+<li>
+<p><strong>Networking</strong>: Build and manage networks to share information and keep data secure.</p>
+</li>
+<li>
+<p><strong>Compute services</strong>: Use cloud virtual servers such as Amazon EC2 to run your projects.</p>
+</li>
+<li>
+<p><strong>Storage services</strong>: Use tools such as Amazon S3 to store your data.</p>
+</li>
+<li>
+<p><strong>Learning Resources</strong>: Learn new skills and knowledge using AWS Training and Certification programs.</p>
+</li>
+</ul>
+<h1 id="getting-started">Getting Started</h1>
+<p>To get started with AWS Cloud, you need to log in to the AWS official website on your device. This section covers creating an AWS account and signing in to the Management Console of AWS.</p>
+<p><img src="Images/AWSFlowChart.png" alt="Image">
+<strong>A process flow diagram to get started with AWS cloud</strong></p>
+<h2 id="create-an-aws-account">Create an AWS Account</h2>
+<p>The process of creating an AWS account involves verifying your email ID and phone number, creating your password and profile, providing contact and billing information, confirming your identity, and selecting a support plan.</p>
+<p>Prerequisites:</p>
+<ul>
+<li>
+<p>An Email Address</p>
+</li>
+<li>
+<p>A Phone Number</p>
+</li>
+<li>
+<p>A Credit or Debit card</p>
+</li>
+</ul>
+<p><strong>Verify Email Address</strong></p>
+<p>AWS needs your email address to ensure security, confirm identity, and provide recovery options for your account.</p>
+<p>To verify email address,</p>
+<ol>
+<li>
+<p>Log in to the AWS official site on your device.</p>
+</li>
+<li>
+<p>In the landing page, select <strong>Create an AWS Account</strong>.</p>
+<p>The <strong>Sign up for AWS</strong> page is displayed.</p>
+<p><strong>Note</strong>: You can also select <strong>Create a  Free Account</strong>.</p>
+</li>
+</ol>
+<p><img src="Images/VerifyEmail.png" alt=""></p>
+<p><strong>The screenshot of the Sign up for AWS page to verify email address.</strong></p>
+<ol start="3">
+<li>
+<p>In the <strong>Root user email address</strong> field, enter your email address.</p>
+</li>
+<li>
+<p>In the <strong>AWS account name</strong> field, enter a name for your AWS account.</p>
+<p><strong>Note</strong>: You can change this name in your account settings later.</p>
+</li>
+<li>
+<p>Select <strong>Verify email address</strong>.</p>
+<p>The <strong>Confirm you are you</strong> page is displayed.</p>
+</li>
+<li>
+<p>In the <strong>Verification code</strong> field, enter the verification code sent to your email address.</p>
+</li>
+<li>
+<p>Select <strong>Verify</strong>.</p>
+<p><strong>Note</strong>: Select <strong>Resend Code</strong> if you did not receive any verification code.</p>
+<p>Your email address is verified and the <strong>Create your password</strong> page is displayed.</p>
+</li>
+</ol>
+<p><strong>Create Password</strong></p>
+<p>AWS needs a password to help you access AWS data and services. It protects your personal information from unauthorized access.</p>
+<p>To create your password,</p>
+<p><img src="Images/VerifyPassword.png" alt="Image"></p>
+<p><strong>The screenshot of the Sign up for AWS page to create your password.</strong></p>
+<ol>
+<li>
+<p>In the <strong>Root user password</strong>, enter a password for your AWS account.</p>
+<p><strong>Note</strong>: Make sure your password contains at least 8 characters with uppercase letters, lowercase letters, numbers, and non-alphanumeric characters.</p>
+</li>
+<li>
+<p>In the <strong>Confirm root user password</strong>, enter the same password.</p>
+</li>
+<li>
+<p>Select <strong>Continue (step 1 of 5)</strong>.</p>
+<p>Your AWS password is created and the <strong>Contact Information</strong> page is
+displayed.</p>
+</li>
+</ol>
+<p><strong>Provide Contact Information</strong></p>
+<p>AWS requires your contact information to verify identity, enable account recovery, and ensure communications for updates and notifications.</p>
+<p>To provide your contact information,</p>
+<p><img src="Images/VerifyContactInformation.png" alt="Image"></p>
+<p><strong>The screenshot of the Sign up for AWS page to provide your contact
+information.</strong></p>
+<ol>
+<li>
+<p>In the <strong>How do you plan to use AWS?</strong> section, perform one of the following:</p>
+<ul>
+<li>
+<p>Select <strong>Business</strong> if you plan to use AWS for your work, school, or organization.</p>
+</li>
+<li>
+<p>Select <strong>Personal</strong> if you plan to use AWS for your own projects.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Who should we contact about this account?</strong> section, perform the following steps:</p>
+<p>a.  In the <strong>Full Name</strong> field, enter your name.</p>
+<p>b.  In the <strong>Country Code</strong> field, select your country code using the drop-down list.</p>
+<p>c.  In the <strong>Phone Number</strong> field, enter your phone number.</p>
+<p>d.  In the <strong>Country or Region</strong>, select your country using the drop-down list.</p>
+<p>e.  In the <strong>Address line 1</strong> and <strong>Address line 2</strong> fields, enter your residential address such as street name, apartment name, floor number and more.</p>
+<p>f.  In the <strong>City</strong> field, enter your city name.</p>
+<p>g.  In the <strong>State, Province, or Region</strong> field, enter the name accordingly.</p>
+<p>h.  In the <strong>Postal Code</strong>, enter the postal code of your address.</p>
+</li>
+<li>
+<p>In the end, select the checkbox to agree to the terms of AWS.</p>
+<p><strong>Note</strong>: Make sure to read the <strong>AWS Customer Agreement</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Agree and Continue (step 2 of 5)</strong>.</p>
+<p>The <strong>Billing Information</strong> page is displayed.</p>
+</li>
+</ol>
+<p><strong>Provide Billing Information</strong></p>
+<p>AWS requires your billing information to process payments, prevent fraudulent activities, and provide smooth access.</p>
+<p>To provide billing information,</p>
+<p><img src="Images/VerifyBillingInformation.png" alt="Image"></p>
+<p><strong>The screenshot of the Sign up for AWS page to provide your billing
+information.</strong></p>
+<ol>
+<li>
+<p>In the <strong>Billing country</strong> field, select your country using the drop-down list.</p>
+</li>
+<li>
+<p>In the <strong>Credit or Debit card number</strong> field, enter your credit or debit card number.</p>
+</li>
+<li>
+<p>In the <strong>Expiration date</strong> field, select the month and year for the expiration date of your card using the drop-down list.</p>
+</li>
+<li>
+<p>In the <strong>Security code</strong> field, enter the three-digit security code of your card.</p>
+</li>
+<li>
+<p>In the <strong>Cardholder's name</strong>, enter the name provided in your card.</p>
+<p><strong>Note</strong>: You can select the checkbox to save your card and charge automatically.</p>
+</li>
+<li>
+<p>In the <strong>Billing address</strong>, perform one of the following:</p>
+<ul>
+<li>
+<p>Select <strong>Use my contact address</strong> if there is no change in the address.</p>
+</li>
+<li>
+<p>Select <strong>Use a new address</strong> if you wish to provide a new billing address and enter the prompted details.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Do you have a PAN?</strong> section, perform one of the following:</p>
+<ul>
+<li>
+<p>Select <strong>Yes</strong> if you have a PAN and enter your PAN.</p>
+<p><strong>Note</strong>: You can also provide PAN later.</p>
+</li>
+<li>
+<p>Select <strong>No</strong> if you do not have a PAN.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select <strong>Verify and continue (step 3 of 5).</strong></p>
+<p>The <strong>Confirm your identity</strong> page is displayed.</p>
+</li>
+</ol>
+<p><strong>Confirm identity</strong></p>
+<p>AWS needs your identity confirmation to verify authenticity, enhance security, and protect data and services.</p>
+<p>To confirm your identity,</p>
+<p><img src="Images/ConfirmIdentity.png" alt="Image"></p>
+<p><strong>The screenshot of the Sign up for AWS page to confirm your identity.</strong></p>
+<ol>
+<li>
+<p>In the <strong>Primary purpose of account registration</strong> field, select your purpose of creating an AWS account using the drop-down list.</p>
+<p><strong>Note</strong>: For more information about the purpose of account registration, see &lt; &gt;.</p>
+</li>
+<li>
+<p>In the <strong>Ownership type</strong> field, select your ownership relation to the account.</p>
+<p>A few additional customer verification steps are added to the page.</p>
+</li>
+<li>
+<p>In the <strong>India document type</strong> field, select a document type using the drop-down list.</p>
+<p><strong>Note</strong>: For more information on document type, see &lt; &gt;.</p>
+</li>
+<li>
+<p>Enter your details in the prompted fields based on your document type.</p>
+</li>
+<li>
+<p>In the end, select the checkbox to give consent allowing AWS to use and send information for identity verification purposes.</p>
+</li>
+<li>
+<p>Select <strong>Continue (step 4 of 5)</strong>.</p>
+<p>The <strong>Confirm your identity</strong> page is displayed with options to verify your phone number.</p>
+</li>
+<li>
+<p>In the <strong>How should we send you the verification code?</strong> section, perform one of the following:</p>
+<ul>
+<li>
+<p>Select <strong>Text message (SMS)</strong> If you wish to receive code in a text
+format.</p>
+</li>
+<li>
+<p>Select <strong>Voice call</strong> if you wish to hear the code in an audio
+format.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Country of region code</strong> field, select your country code using the drop-down list.</p>
+</li>
+<li>
+<p>In the <strong>Mobile phone number</strong> field, enter your phone number and select <strong>Send SMS (step 4 of 5)</strong>.</p>
+<p>A <strong>Security Verification</strong> page is displayed.</p>
+</li>
+<li>
+<p>In the <strong>Type the characters as shown above</strong> field, enter captcha and Select <strong>Submit</strong>.</p>
+<p><strong>Note</strong>: You can also hear the code using
+<img src="Images/Speaker.png" alt="Image"> option.</p>
+<p>The <strong>Verify code</strong> page is displayed.</p>
+</li>
+<li>
+<p>In the <strong>Verify code</strong> field, enter the verification code sent to your phone number and select <strong>Continue (step 4 of 5)</strong>.</p>
+<p>The <strong>Select a support plan</strong> page is displayed.</p>
+</li>
+</ol>
+<p><strong>Select a Support Plan</strong></p>
+<p>AWS needs your support plan to provide access and resources you need based on your requirements for using AWS services.</p>
+<p>To select a support plan,</p>
+<p><img src="Images/SupportPlan.png" alt="Image"></p>
+<p><strong>The screenshot of the Sign up for AWS page to select a support plan.</strong></p>
+<ol>
+<li>
+<p>In the <strong>Select a support plan</strong> page, perform one of the following:</p>
+<ul>
+<li>
+<p>Select <strong>Basic support -- Free</strong> if you are a new user of AWS.</p>
+</li>
+<li>
+<p>Select <strong>Developer support -- From $29/month</strong> if you are a developer experimenting with AWS.</p>
+</li>
+<li>
+<p>Select <strong>Business support -- From $100/month</strong> if you are running production workloads on AWS.</p>
+<p><strong>Note:</strong> For more information on support plans and prices, see &lt; &gt;.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select <strong>Complete sign up.</strong></p>
+<p>The <strong>Congratulations!</strong> page is displayed.</p>
+<p>Your AWS account is successfully created.</p>
+</li>
+</ol>
+<h2 id="sign-in-to-aws-management-console">Sign In to AWS Management Console</h2>
+<p>Signing In to the AWS Management Console provides full access to AWS services and resources in your account. Initially, you must sign in as the root user. The root user is associated with the email address and password used during your account creation.</p>
+<p>To sign in as the root user,</p>
+<ol>
+<li>
+<p>Log in to the AWS official website on your device.</p>
+</li>
+<li>
+<p>In the landing page, select <strong>Sign In to the Console</strong>.</p>
+<p>The <strong>Sign in</strong> page is displayed.</p>
+</li>
+<li>
+<p>Select <strong>Root user</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Root user email address</strong> field, enter your email address and select <strong>Next</strong>.</p>
+<p>The <strong>Root user sign in</strong> page is displayed.</p>
+</li>
+<li>
+<p>In the <strong>Password</strong> field, enter your password for your AWS account and select <strong>Sign</strong> <strong>in</strong>.</p>
+<p>The <strong>Keep your account secure</strong> page is displayed.</p>
+</li>
+<li>
+<p>In the <strong>Keep your account secure</strong> page, perform one of the following:</p>
+<ul>
+<li>
+<p>Enter the prompted details and select <strong>Next</strong>.</p>
+<p><strong>Note</strong>: For more information on <strong>multi-factor authentication (MFA)</strong>, see &lt; &gt;.</p>
+</li>
+<li>
+<p>Select <strong>Skip for now</strong> if you are not sure.</p>
+</li>
+</ul>
+<p>The <strong>Console Home</strong> page of AWS is displayed.</p>
+<p>Your sign in to the AWS Management Console is successful.</p>
+</li>
+</ol>
+<h1 id="faqs">FAQs</h1>
+
+</body>
+</html>
